@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 310px;
+  height: 335px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 20px;
+  /* add dark and light theme. dark is default */
+}
+header {
+  display: flex;
+  height: 110px;
+}
+header > * {
+  flex: 1 0 50%;
+}
+.percentage {
+  font-size: 16px;
+  color: white;
+  background-color: rgb(56, 58, 57);
+}
+.upside {
+  background-color: rgb(26, 107, 58);
+}
+.downside {
+  background-color: rgb(107, 26, 26);
+}
+main {
+  height: 180px;
+}
+#ticker {
+  letter-spacing: 3px;
+}
+#price {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(56, 58, 57, 0.35);
+}
+#price > * {
+  width: 100%;
+}
+#price_percentage {
+  padding: 6px;
+}
+.section-title {
+  font-size: 14px;
+}
+#price.upside {
+  background-color: rgba(26, 107, 58, 0.35);
+}
+#price.downside {
+  background-color: rgba(107, 26, 26, 0.35);
+}
+h1 {
+  font-size: 36px;
+}
+footer {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tipranks_nav,
+#retry_search {
+  background: none;
+  border: none;
+  color: white;
+  margin-right: 12px;
+  font-size: 11px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  letter-spacing: 0.2px;
+}
+#retry_search {
+  margin-left: 12px;
+}
+.skeleton > div {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+  width: 80% !important;
+  height: 15%;
+  margin-bottom: 6px;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsla(150, 2%, 22%);
+  }
+  100% {
+    background-color: hsla(150, 2%, 52%);
+  }
+}
+.no-data {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.sm-heading {
+  font-size: 20px;
+}
+.no-bold {
+  font-weight: normal;
+}
+.text-center {
+  text-align: center;
+}
+.center-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-secondary {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.flex-col {
+  flex-direction: column;
+}
+.mb-3 {
+  margin-bottom: 0.5rem;
+}
+.mb-5 {
+  margin-bottom: 1rem;
+}

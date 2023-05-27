@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Analysis</title>
+    <link rel="stylesheet" href="./popup/popup.css" />
+  </head>
+  <body>
+    <header>
+      <h2 id="ticker" class="no-bold sm-heading center-child"></h2>
+      <div id="ratings" class="skeleton center-child flex-col">
+        <h3 class="heading-secondary mb-3">Concensus</h3>
+        <h3 id="header_concensus_rating" class="sm-heading mb-3"></h3>
+        <h3 id="header_concensus_rating_count" class="sm-heading no-bold"></h3>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <main>
+      <section id="price" class="skeleton">
+        <h2 class="heading-secondary mb-5">Price Target:</h2>
+        <h2 id="price_target" class="mb-5"></h2>
+        <h2 id="price_percentage" class="sm-heading no-bold"></h2>
+        <div></div>
+        <div></div>
+      </section>
+    </main>
+    <footer>
+      <button id="retry_search">Refresh Ticker</button>
+      <button id="tipranks_nav">See more on Tipranks</button>
+    </footer>
+  </body>
+  <script src="./popup/popup.js" type="module"></script>
+</html>
